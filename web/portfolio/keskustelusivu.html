@@ -13,8 +13,11 @@
         <a href="/web/työkokemukset.html">Työkokemukset</a>
         <a href="/web/index.html">Etusivu</a>
     </nav>
-    </header>
-    <br>
+    </header><br>
+
+<button command="show-modal" commandfor="kommenttinappi">Kommentoi</button>
+
+<dialog id="kommenttinappi">
     <form>
         <label for="syntymapaiva">Syntymäpäivä:</label>
         <input type="date" id="syntymapaiva" name="syntymapaiva"><br>
@@ -34,10 +37,10 @@
         <input type="checkbox" id="markkinointi" name="markkinointi">
         <label for="markkinointi">Saako tietoja käyttää markkinoinnissa?</label><br>
 
-        <input type="button" value="Lähetä">
-        
+        <button type="submit">Lähetä</button>
     </form>
-
+    <button commandfor="kommenttinappi" command="close">Sulje</button>
+</dialog>
     </div>
 
     <div class="comment-section">
