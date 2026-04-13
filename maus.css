@@ -33,3 +33,39 @@ section {
     margin-bottom: 15px;
     border-radius: 8px;
 }
+
+a {
+  color: #328d2a;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #3fbc45;
+}
+
+a:visited {
+  color: #888888;
+}
+
+button {
+  background-color: #328d2a;
+  color: #ffffff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3fbc45;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  background-color: #fff8b5;
+  outline: none;
+}
+
+li:last-child {
+  font-style: italic;
+}
