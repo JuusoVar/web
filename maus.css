@@ -2,7 +2,6 @@ body {
     background-color: #e2e2e2;
     margin-left: 64px;
     margin-right: 64px;
-    font-family: Arial, sans-serif;
     color: #333;
 }
 
@@ -68,4 +67,65 @@ select:focus {
 
 li:last-child {
   font-style: italic;
+}
+
+@font-face {
+  font-family: "leipäteksti";
+  src: url("Indie_Flower/IndieFlower-Regular.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "otsikko";
+  src: url("Birthstone/Birthstone-Regular.ttf");
+  font-weight: bold;
+
+}
+p {
+    font-family: "leipäteksti", Arial, sans-serif;
+}
+h1 {
+    font-family: "Otsikko", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+}
+h2 {
+    font-family: "Otsikko", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+}
+h3 {
+    font-family: "Otsikko", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+}
+h4 {
+    font-family: "Otsikko", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+}
+h5 {
+    font-family: "Otsikko", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+}
+h6 {
+    font-family: "Otsikko", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+td {
+    font-family: "leipäteksti", Arial, sans-serif;
+}
+tr {
+    font-family: "leipäteksti", Arial, sans-serif;
+}
+div {
+    font-family: "leipäteksti", Arial, sans-serif;
+}
+nav {
+    font-family: "leipäteksti", Arial, sans-serif;
+}
+summary {
+    font-family: "leipäteksti", Arial, sans-serif;
 }
