@@ -129,3 +129,32 @@ nav {
 summary {
     font-family: "leipäteksti", Arial, sans-serif;
 }
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: grid;
+
+  grid-template-rows: auto auto 1fr auto;
+  grid-template-areas:
+    "ylapalkki"
+    "navigaatio"
+    "sisalto"
+    "alapalkki";
+}
+
+header {
+  grid-area: ylapalkki;
+}
+
+nav {
+  grid-area: navigaatio;
+}
+
+main {
+  grid-area: sisalto;
+}
+
+footer {
+  grid-area: alapalkki;
+}

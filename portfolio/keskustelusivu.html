@@ -3,6 +3,7 @@
 <head>
     <link rel="icon" href="../favicon.png" type="image/png">
     <link rel="stylesheet" href="../maus.css">
+    <link rel="stylesheet" href="portfolio.css">
     <meta name="keywords" content="keskustelu, kommentteja, kysymyksiä">
     <meta name="description" content="Kommentti lomake">
     <meta name="author" content="Juuso Vartiainen">
@@ -11,76 +12,92 @@
     <title>Keskustelusivu</title>
 </head>
 <body>
-    <h1>Jätä kommentti</h1>
+
     <header>
-        <nav>
-        <a href="Portfolio.html">Portfoliosivu</a>
+        Juuso Vartiainen Tiev 25P
+    </header>
+
+    <nav>
         <a href="../työkokemukset.html">Työkokemukset</a>
         <a href="../index.html">Etusivu</a>
     </nav>
-    </header><br>
 
-<button command="show-modal" commandfor="kommenttinappi">Kommentoi</button>
+     <aside>
+        <a href="Portfolio.html">Portfoliosivu</a>
+    </aside>
 
-<dialog id="kommenttinappi">
-    <form>
-        <label for="syntymapaiva">Syntymäpäivä:</label>
-        <input type="date" id="syntymapaiva" name="syntymapaiva"><br>
+    <main>
+        <h1>Jätä kommentti</h1>
 
-        <label for="email">Sähköposti:</label>
-        <input type="email" id="email" name="email"><br>
+        <button command="show-modal" commandfor="kommenttinappi">Kommentoi</button>
 
-        <label for="viestityyppi">Viestin tyyppi:</label>
-        <select id="viestityyppi" name="viestityyppi">
-            <option value="Kysymys">Kysymys</option>
-            <option value="Kommentti">Kommentti</option>
-        </select><br>
+        <dialog id="kommenttinappi">
+            <form>
+                <label for="syntymapaiva">Syntymäpäivä:</label>
+                <input type="date" id="syntymapaiva" name="syntymapaiva"><br>
 
-        <label for="viesti">Viesti:</label><br>
-        <textarea id="viesti" name="viesti" cols="30" rows="10"></textarea><br>
+                <label for="email">Sähköposti:</label>
+                <input type="email" id="email" name="email"><br>
 
-        <input type="checkbox" id="markkinointi" name="markkinointi">
-        <label for="markkinointi">Saako tietoja käyttää markkinoinnissa?</label><br>
+                <label for="viestityyppi">Viestin tyyppi:</label>
+                <select id="viestityyppi" name="viestityyppi">
+                    <option value="Kysymys">Kysymys</option>
+                    <option value="Kommentti">Kommentti</option>
+                </select><br>
 
-        <button type="submit">Lähetä</button>
-    </form>
-    <button commandfor="kommenttinappi" command="close">Sulje</button>
-</dialog>
-    </div>
+                <label for="viesti">Viesti:</label><br>
+                <textarea id="viesti" name="viesti" cols="30" rows="10"></textarea><br>
 
-    <div class="comment-section">
-        <h2>Aiemmat kommentit</h2>
-        
-        <div class="comment">
-            <div class="comment-header">Dekki@gmail.com</div>
-            <div class="comment-date">2026-03-18 14:32</div>
-            <div class="comment-text">Hyvä keskustelusivu! Kiitos kaikista tiedoista.</div><p></p>
+                <input type="checkbox" id="markkinointi" name="markkinointi">
+                <label for="markkinointi">Saako tietoja käyttää markkinoinnissa?</label><br>
+
+                <button type="submit">Lähetä</button>
+            </form>
+
+            <button commandfor="kommenttinappi" command="close">Sulje</button>
+        </dialog>
+
+        <div class="comment-section">
+            <h2>Aiemmat kommentit</h2>
+
+            <div class="comment">
+                <div class="comment-header">Dekki@gmail.com</div>
+                <div class="comment-date">2026-03-18 14:32</div>
+                <div class="comment-text">Hyvä keskustelusivu! Kiitos kaikista tiedoista.</div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-header">Baussinaussi@gmail.com</div>
+                <div class="comment-date">2026-03-17 12:45</div>
+                <div class="comment-text">Onko tätä sivua tarkoitus käyttää asiakaspalveluun myös?</div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-header">Näppy@gmail.com</div>
+                <div class="comment-date">2026-03-16 10:20</div>
+                <div class="comment-text">Tosi hyödyllinen ja informatiivinen sivu!</div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-header">Matti@gmail.com</div>
+                <div class="comment-date">2026-03-15 15:50</div>
+                <div class="comment-text">Miten voin liittyä keskusteluun?</div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-header">maussi@gmail.com</div>
+                <div class="comment-date">2026-03-14 17:05</div>
+                <div class="comment-text">Mikä on keskustelun tarkoitus tällä sivustolla?</div>
+            </div>
+
         </div>
+    </main>
 
-        <div class="comment">
-            <div class="comment-header">Baussinaussi@gmail.com</div>
-            <div class="comment-date">2026-03-17 12:45</div>
-            <div class="comment-text">Onko tätä sivua tarkoitus käyttää asiakaspalveluun myös?</div><p></p>
-        </div>
+    <footer>
+        <a href="https://taito.edu.turku.fi/">Moodle</a>
+        <a href="https://turku.inschool.fi/">Wilma</a>
+        <a href="https://tai.fi/">TAI</a>
+    </footer>
 
-        <div class="comment">
-            <div class="comment-header">Näppy@gmail.com</div>
-            <div class="comment-date">2026-03-16 10:20</div>
-            <div class="comment-text">Tosi hyödyllinen ja informatiivinen sivu!</div><p></p>
-        </div>
-
-        <div class="comment">
-            <div class="comment-header">Matti@gmail.com</div>
-            <div class="comment-date">2026-03-15 15:50</div>
-            <div class="comment-text">Miten voin liittyä keskusteluun?</div><p></p>
-        </div>
-
-        <div class="comment">
-            <div class="comment-header">maussi@gmail.com</div>
-            <div class="comment-date">2026-03-14 17:05</div>
-            <div class="comment-text">Mikä on keskustelun tarkoitus tällä sivustolla?</div>
-        </div>
-
-    </div>
 </body>
 </html>
