@@ -73,11 +73,11 @@ nav a {
   display: block;
   margin-bottom: 1em;
   text-decoration: none;
-  color: #328d2a;
+ color: #b91313;
 }
 
 nav a:hover {
-  color: #3fbc45;
+ color: #e20c0c;
 }
 
 nav a:visited {
@@ -101,12 +101,12 @@ aside {
 aside a {
   display: block;
   margin-bottom: 2em;
-  color: #328d2a;
+  color: #b91313;
   text-decoration: none;
 }
 
 aside a:hover {
-  color: #3fbc45;
+  color: #e20c0c;
 }
 
 section {
@@ -123,15 +123,15 @@ footer {
 footer a {
   margin: 0 2em;
   text-decoration: none;
-  color: #328d2a;
+ color: #b91313;
 }
 
 footer a:hover {
-  color: #3fbc45;
+  color: #e20c0c;
 }
 
 button {
-  background-color: #328d2a;
+ background-color: #b91313;
   color: #ffffff;
   border: none;
   padding: 8px 12px;
@@ -139,7 +139,7 @@ button {
 }
 
 button:hover {
-  background-color: #3fbc45;
+  color: #e20c0c;
 }
 
 input:focus,
