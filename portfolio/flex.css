@@ -9,16 +9,6 @@ aside {
   padding: 1.5em;
   border-right: 2px solid black;
   flex-shrink: 0;
- }
-
-aside a {
-  margin-bottom: 1em;
-  text-decoration: none;
-  color: #328d2a;
-}
-
-aside a:hover {
-  color: #3fbc45;
 }
 
 main {
@@ -30,49 +20,16 @@ main {
 
 .main-container {
   display: flex;
+  flex-wrap: nowrap;
   gap: 20px;
   padding: 20px;
   width: 100%;
+  overflow-x: auto;
 }
 
 .col {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  width: 160px;
-  padding: 1.5em;
-  border-right: 2px solid black;
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-}
-
-aside a {
-  margin-bottom: 1em;
-  text-decoration: none;
-  color: #328d2a;
-}
-
-aside a:hover {
-  color: #3fbc45;
-}
-
-main {
   flex: 1;
   min-width: 0;
-  display: flex;
-  justify-content: center;
-}
-
-.main-container {
-  display: flex;
-  gap: 20px;
-  padding: 20px;
-  width: 100%;
-}
-
-.col {
-  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 20px;

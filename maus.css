@@ -2,14 +2,25 @@
   box-sizing: border-box;
 }
 
+header,
+nav,
+main,
+footer {
+  background-image: url("paasivutausta.avif");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center top;
+}
+
 body {
   margin: 0;
   background-color: #e2e2e2;
   color: #333;
   min-height: 100vh;
-
   display: flex;
   justify-content: center;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 
 .container {
@@ -17,7 +28,6 @@ body {
   width: 100%;
   background-color: #ffffff;
   border: 2px solid black;
-
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -44,15 +54,15 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-h1 {
-  font-size: 3em;
-}
+h1 { font-size: 32px; }
+h2 { font-size: 26px; }
+h3 { font-size: 22px; }
+h4 { font-size: 18px; }
 
 header {
   padding: 1em;
   border-bottom: 2px solid black;
 }
-
 
 nav {
   padding: 1em;
@@ -60,7 +70,8 @@ nav {
 }
 
 nav a {
-  margin-right: 3em;
+  display: block;
+  margin-bottom: 1em;
   text-decoration: none;
   color: #328d2a;
 }
@@ -73,7 +84,6 @@ nav a:visited {
   color: #888888;
 }
 
-
 main:not(.main-container) {
   display: flex;
   flex: 1;
@@ -82,6 +92,10 @@ main:not(.main-container) {
 aside {
   padding: 3em;
   border-right: 2px solid black;
+  background-image: url("alasivutausta.jpg");
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+  background-position: top center;
 }
 
 aside a {
@@ -98,11 +112,6 @@ aside a:hover {
 section {
   flex: 1;
   padding: 5em;
-}
-
-section h1 {
-  font-size: 3em;
-  margin-bottom: 0.5em;
 }
 
 footer {
@@ -143,19 +152,21 @@ select:focus {
 li:last-child {
   font-style: italic;
 }
- footer, main, header, nav {background-image: url("paasivutausta.avif");
-  background-size: auto 100% ;        
-  background-attachment: fixed; 
-  background-position: center top; 
-  background-size: cover;
-  background-size: contain;
-  
-}
-aside {
-  padding: 3em;
-  border-right: 2px solid black;
-  background-image: url("alasivutausta.jpg");
-  background-repeat: repeat-y;
-  background-size: 100% auto; 
-  background-position: top center;
+
+@media (min-width: 641px) {
+  body {
+    margin-left: 64px;
+    margin-right: 64px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin-right: 3em;
+    margin-bottom: 0;
+  }
+
+  h1 { font-size: 60px; }
+  h2 { font-size: 48px; }
+  h3 { font-size: 32px; }
+  h4 { font-size: 18px; }
 }
