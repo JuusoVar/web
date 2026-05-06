@@ -1,58 +1,56 @@
-main {
-  display: flex;         
-  flex-direction: row; 
-  align-items: center;  
-  justify-content: end; 
-  flex-wrap: nowrap;                            
-}
-main {
-  display: flex;           
-  flex-direction: row;  
-  align-items: start;     
-  justify-content: center; 
+.page-layout {
+  display: flex;
+  flex: 1;
+  align-items: stretch;
 }
 
-    .main-container {
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-        padding: 10px;
-        border: 2px solid #333;
-        min-height: 500px;
-    }
+aside {
+  width: 200px;
+  padding: 1.5em;
+  border-right: 2px solid black;
+  flex-shrink: 0;
+ }
 
-    .flex-item-as-container {
-        display: flex;
-        flex-direction: column;
-        flex: 1; 
-        gap: 5px;
-        padding: 5px;
-        background-color: #f0f0f0;
-        border: 1px solid #999;
-    }
+aside a {
+  margin-bottom: 1em;
+  text-decoration: none;
+  color: #328d2a;
+}
 
-    .sub-item {
-        background-color: #007bff;
-        color: white;
-        padding: 10px;
-        text-align: center;
-        border-radius: 4px;
-        font-family: sans-serif;
-        font-size: 12px;
-    }
-    .container {
+aside a:hover {
+  color: #3fbc45;
+}
+
+main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.main-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+}
+
+.col {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
 }
 
 .item {
   display: flex;
   align-items: center;
+  gap: 15px;
 }
 
 .item img {
-  width: 150px; 
-  height: auto; 
-  margin-right: 20px;
+  width: 120px;
+  height: auto;
+  background: #eee;
+  padding: 5px;
 }

@@ -1,49 +1,127 @@
+* {
+  box-sizing: border-box;
+  
+}
+
 body {
-    background-color: #e2e2e2;
-    margin-left: 64px;
-    margin-right: 64px;
-    color: #333;
+  margin: 0;
+  background-color: #e2e2e2;
+  color: #333;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  background-color: #ffffff;
+  border: 2px solid black;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+@font-face {
+  font-family: "leipateksti";
+  src: url("Indie_Flower/IndieFlower-Regular.ttf");
+}
+
+@font-face {
+  font-family: "otsikko";
+  src: url("Birthstone/Birthstone-Regular.ttf");
+}
+
+p, li, td, tr, div, nav, summary {
+  font-family: "leipateksti", Arial, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #3f505c;
+  font-family: "otsikko", Arial, sans-serif;
+  font-weight: bold;
+  color: #3f505c;
+  margin: 0;
 }
 
 h1 {
-    font-size: 60px;
+  font-size: 3em;
 }
 
-h2 {
-    font-size: 48px;
+header {
+  padding: 1em;
+  border-bottom: 2px solid black;
 }
 
-h3 {
-    font-size: 32px;
+
+nav {
+  padding: 1em;
+  border-bottom: 2px solid black;
 }
 
-h4 {
-    font-size: 18px;
+nav a {
+  margin-right: 3em;
+  text-decoration: none;
+  color: #328d2a;
 }
 
-section {
-    border: 4px solid #b1b1b1;
-    background-color: #ffffff; 
-    padding: 16px;
-    margin-bottom: 15px;
-    border-radius: 8px;
+nav a:hover {
+  color: #3fbc45;
 }
 
-a {
+nav a:visited {
+  color: #888888;
+}
+
+
+main:not(.main-container) {
+  display: flex;
+  flex: 1;
+  
+}
+
+aside {
+  padding: 3em;
+  border-right: 2px solid black;
+}
+
+aside a {
+  display: block;
+  margin-bottom: 2em;
   color: #328d2a;
   text-decoration: none;
 }
 
-a:hover {
+aside a:hover {
   color: #3fbc45;
 }
 
-a:visited {
-  color: #888888;
+section {
+  flex: 1;
+  padding: 5em;
+}
+
+section h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+footer {
+  padding: 3em;
+  border-top: 2px solid black;
+  text-align: center;
+}
+
+footer a {
+  margin: 0 2em;
+  text-decoration: none;
+  color: #328d2a;
+}
+
+footer a:hover {
+  color: #3fbc45;
 }
 
 button {
@@ -68,93 +146,20 @@ select:focus {
 li:last-child {
   font-style: italic;
 }
+ footer, main, header, nav {background-image: url("paasivutausta.avif");
+  background-size: auto 100% ;        
+  background-attachment: fixed; 
+  background-position: center top; 
+  background-size: cover;
+  background-size: contain;
+  
+}
+aside {
+  padding: 3em;
+  border-right: 2px solid black;
 
-@font-face {
-  font-family: "leipäteksti";
-  src: url("Indie_Flower/IndieFlower-Regular.ttf");
-  font-weight: normal;
-}
-@font-face {
-  font-family: "otsikko";
-  src: url("Birthstone/Birthstone-Regular.ttf");
-  font-weight: bold;
-
-}
-p {
-    font-family: "leipäteksti", Arial, sans-serif;
-}
-h1 {
-    font-family: "Otsikko", Arial, sans-serif;
-    font-weight: bold;
-    font-size: 2em;
-}
-h2 {
-    font-family: "Otsikko", Arial, sans-serif;
-    font-weight: bold;
-    font-size: 2em;
-}
-h3 {
-    font-family: "Otsikko", Arial, sans-serif;
-    font-weight: bold;
-    font-size: 2em;
-}
-h4 {
-    font-family: "Otsikko", Arial, sans-serif;
-    font-weight: bold;
-    font-size: 2em;
-}
-h5 {
-    font-family: "Otsikko", Arial, sans-serif;
-    font-weight: bold;
-    font-size: 2em;
-}
-h6 {
-    font-family: "Otsikko", Arial, sans-serif;
-    font-weight: bold;
-    font-size: 2em;
-}
-
-td {
-    font-family: "leipäteksti", Arial, sans-serif;
-}
-tr {
-    font-family: "leipäteksti", Arial, sans-serif;
-}
-div {
-    font-family: "leipäteksti", Arial, sans-serif;
-}
-nav {
-    font-family: "leipäteksti", Arial, sans-serif;
-}
-summary {
-    font-family: "leipäteksti", Arial, sans-serif;
-}
-
-body {
-  margin: 0;
-  height: 100vh;
-  display: grid;
-
-  grid-template-rows: auto auto 1fr auto;
-  grid-template-areas:
-    "ylapalkki"
-    "navigaatio"
-    "sisalto"
-    "alapalkki";
-}
-
-header {
-  grid-area: ylapalkki;
-}
-
-nav {
-  grid-area: navigaatio;
-}
-
-main {
-  grid-area: sisalto;
-}
-
-footer {
-  grid-area: alapalkki;
+  background-image: url("alasivutausta.jpg");
+  background-repeat: repeat-y;      /* vain pystysuunnassa */
+  background-size: 100% auto;       /* täyttää leveyden */
+  background-position: top center;  /* alkaa ylhäältä */
 }
