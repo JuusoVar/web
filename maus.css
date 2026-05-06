@@ -1,9 +1,5 @@
 * {
   box-sizing: border-box;
-<<<<<<< HEAD
-  
-=======
->>>>>>> 1ce6f2e2a3d489635dafc22e357195b3f8a8baa1
 }
 
 body {
@@ -14,10 +10,6 @@ body {
 
   display: flex;
   justify-content: center;
-<<<<<<< HEAD
-  
-=======
->>>>>>> 1ce6f2e2a3d489635dafc22e357195b3f8a8baa1
 }
 
 .container {
@@ -85,10 +77,6 @@ nav a:visited {
 main:not(.main-container) {
   display: flex;
   flex: 1;
-<<<<<<< HEAD
-  
-=======
->>>>>>> 1ce6f2e2a3d489635dafc22e357195b3f8a8baa1
 }
 
 aside {
@@ -154,7 +142,6 @@ select:focus {
 
 li:last-child {
   font-style: italic;
-<<<<<<< HEAD
 }
  footer, main, header, nav {background-image: url("paasivutausta.avif");
   background-size: auto 100% ;        
@@ -167,11 +154,8 @@ li:last-child {
 aside {
   padding: 3em;
   border-right: 2px solid black;
-
   background-image: url("alasivutausta.jpg");
-  background-repeat: repeat-y;      /* vain pystysuunnassa */
-  background-size: 100% auto;       /* täyttää leveyden */
-  background-position: top center;  /* alkaa ylhäältä */
-=======
->>>>>>> 1ce6f2e2a3d489635dafc22e357195b3f8a8baa1
+  background-repeat: repeat-y;
+  background-size: 100% auto; 
+  background-position: top center;
 }
