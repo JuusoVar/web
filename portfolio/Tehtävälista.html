@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
-    <link rel="icon" href="../favicon.png" type="image/png">
-    <link rel="stylesheet" href="../maus.css">
-    <script src="Portfolio.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfoliosivu</title>
+
+    <title>Tehtävälista</title>
+
+    <link rel="icon" href="../favicon.png" type="image/png">
+    <link rel="stylesheet" href="../maus.css">
+
+    <script src="Tehtävälista.js" defer></script>
 </head>
 
-<body> 
+<body>
 
-  <div class="container">
+<div class="container">
 
     <header>
         Juuso Vartiainen Tiev 25P
@@ -25,15 +28,24 @@
     <main>
 
         <aside>
+            <a href="Portfolio.html">Portfoliosivu</a>
+            <a href="Muuttujia ja tietotyyppejä.html">Muuttujia ja tietotyyppejä</a>
             <a href="keskustelusivu.html">Keskustelusivu</a>
             <a href="flex.html">Flexsivu</a>
-            <a href="Muuttujia ja tietotyyppejä.html">Muuttujia ja tietotyyppejä</a>
-            <a href="Tehtävälista.html">Tehtävälista</a>
         </aside>
 
         <section>
-            <h1>Portfoliosivu</h1>
-            <h2>Täällä on web-ohjelmointi tehtäviä</h2>
+
+            <h1>Tehtävälista</h1>
+
+            <ul id="lista"></ul>
+
+            <input type="text" id="tehtava">
+
+            <button onclick="lisaa()">
+                Lisää
+            </button>
+
         </section>
 
     </main>
@@ -44,7 +56,7 @@
         <a href="https://tai.fi/">TAI</a>
     </footer>
 
-  </div>
+</div>
 
 </body>
 </html>
