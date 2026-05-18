@@ -1,103 +1,114 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
-    <link rel="icon" href="../favicon.png" type="image/png">
-    <link rel="stylesheet" href="../maus.css">
-    <script src="keskustelusivu.js" defer></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keskustelusivu</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Keskustelusivu</title>
+
+  <link rel="icon" href="../favicon.png" type="image/png">
+  <link rel="stylesheet" href="../maus.css">
+
+  <script src="keskustelusivu.js" defer></script>
 </head>
 
 <body>
 
-  <div class="container">
+<div class="container">
 
-    <header>
-        Juuso Vartiainen Tiev 25P
-    </header>
+  <header>
+    Juuso Vartiainen Tiev 25P
+  </header>
 
-    <nav>
-        <a href="../index.html">Etusivu</a>
-        <a href="../työkokemukset.html">Työkokemukset</a>
-    </nav>
+  <nav>
+    <a href="../index.html">Etusivu</a>
+    <a href="../työkokemukset.html">Työkokemukset</a>
+  </nav>
 
-    <main>
+  <main>
 
-      <aside>
-        <a href="Portfolio.html">Portfoliosivu</a>
-        <a href="Muuttujia ja tietotyyppejä.html">Muuttujia ja tietotyyppejä</a>
-      </aside>
+    <aside>
+      <a href="Portfolio.html">Portfoliosivu</a>
+      <a href="Muuttujia ja tietotyyppejä.html">Muuttujia ja tietotyyppejä</a>
+    </aside>
 
-      <section>
+    <section>
 
-        <h1>Jätä kommentti</h1>
+      <h1>Jätä kommentti</h1>
 
-        <button onclick="document.getElementById('kommenttinappi').showModal()">
-          Kommentoi
+      <button onclick="document.getElementById('kommenttinappi').showModal()">
+        Kommentoi
+      </button>
+
+      <dialog id="kommenttinappi">
+
+        <form>
+
+          <label>Syntymäpäivä:</label><br>
+          <input type="date" name="birthday"><br><br>
+
+          <label>Sähköposti:</label><br>
+          <input type="email" name="email"><br><br>
+
+          <label>Viestin tyyppi:</label><br>
+          <select name="type">
+            <option value="Kysymys">Kysymys</option>
+            <option value="Kommentti">Kommentti</option>
+          </select><br><br>
+
+          <label>Käyttötarkoitus:</label><br>
+          <input type="text" name="usage"><br><br>
+
+          <label>Viesti:</label><br>
+          <textarea name="body" cols="30" rows="10"></textarea><br><br>
+
+          <label>
+            <input type="checkbox" name="marketing">
+            Saako tietoja käyttää markkinoinnissa?
+          </label><br><br>
+
+          <button onclick="send(event)">Lähetä</button>
+
+        </form>
+
+        <button onclick="document.getElementById('kommenttinappi').close()">
+          Sulje
         </button>
 
-        <dialog id="kommenttinappi">
-          <form method="dialog">
-            <label>Syntymäpäivä:</label>
-            <input type="date"><br>
+      </dialog>
 
-            <label>Sähköposti:</label>
-            <input type="email"><br>
+      <div class="comment-section">
 
-            <label>Viestin tyyppi:</label>
-            <select>
-              <option>Kysymys</option>
-              <option>Kommentti</option>
-            </select><br>
+        <h2>Aiemmat kommentit</h2>
 
-            <label>Viesti:</label><br>
-            <textarea cols="30" rows="10"></textarea><br>
-
-            <label>
-              <input type="checkbox">
-              Saako tietoja käyttää markkinoinnissa?
-            </label><br>
-
-            <button type="submit">Lähetä</button>
-          </form>
-
-          <button onclick="document.getElementById('kommenttinappi').close()">
-            Sulje
-          </button>
-        </dialog>
-
-        <div class="comment-section">
-          <h2>Aiemmat kommentit</h2>
-
-          <div class="comment">
-            <strong>Dekki@gmail.com</strong>
-            <p>Hyvä keskustelusivu! Kiitos kaikista tiedoista.</p>
-          </div>
-
-          <div class="comment">
-            <strong>Baussinaussi@gmail.com</strong>
-            <p>Onko tätä sivua tarkoitus käyttää asiakaspalveluun myös?</p>
-          </div>
-
-          <div class="comment">
-            <strong>Näppy@gmail.com</strong>
-            <p>Tosi hyödyllinen ja informatiivinen sivu!</p>
-          </div>
-
+        <div class="comment">
+          <strong>Dekki@gmail.com</strong>
+          <p>Hyvä keskustelusivu! Kiitos kaikista tiedoista.</p>
         </div>
 
-      </section>
+        <div class="comment">
+          <strong>Baussinaussi@gmail.com</strong>
+          <p>Onko tätä sivua tarkoitus käyttää asiakaspalveluun myös?</p>
+        </div>
 
-    </main>
+        <div class="comment">
+          <strong>Näppy@gmail.com</strong>
+          <p>Tosi hyödyllinen ja informatiivinen sivu!</p>
+        </div>
 
-    <footer>
-      <a href="https://taito.edu.turku.fi/">Moodle</a>
-      <a href="https://turku.inschool.fi/">Wilma</a>
-      <a href="https://tai.fi/">TAI</a>
-    </footer>
+      </div>
 
-  </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <a href="https://taito.edu.turku.fi/">Moodle</a>
+    <a href="https://turku.inschool.fi/">Wilma</a>
+    <a href="https://tai.fi/">TAI</a>
+  </footer>
+
+</div>
 
 </body>
 </html>
