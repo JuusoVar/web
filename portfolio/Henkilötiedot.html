@@ -49,9 +49,28 @@
                         <th>Ajokortti</th>
                     </tr>
                 </thead>
+
                 <tbody id="rivit">
                 </tbody>
+
             </table>
+
+            <h2>Lisää henkilö</h2>
+
+            <input type="text" id="nimi" placeholder="Nimi">
+
+            <input type="number" id="ika" placeholder="Ikä">
+
+            <input type="text" id="tyo" placeholder="Työ">
+
+           <label style="display: inline-flex; align-items: center; gap: 5px;">
+                <input type="checkbox" id="ajokortti">
+                Ajokortti
+           </label>
+
+            <button onclick="lisaaHenkilo()">
+                Lähetä
+            </button>
 
         </section>
 
