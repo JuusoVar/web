@@ -5,8 +5,6 @@ let b = 5;
 let c = 7;
 let d = 15;
 
-// Peruslaskut
-
 function summa(a, b) {
     alert(Number(a) + Number(b));
 }
@@ -22,8 +20,6 @@ function kerto(a, b) {
 function jako(a, b) {
     alert(Number(a) / Number(b));
 }
-
-// Laskin
 
 function laskin_summa() {
 
@@ -56,8 +52,6 @@ function laskin_jako() {
 
     jako(eka, toka);
 }
-
-// Math-toiminnot
 
 function laskin_abs() {
 
@@ -103,8 +97,6 @@ function laskin_round() {
 
     alert(Math.round(Number(eka)));
 }
-
-// Päivämäärä ja aika
 
 function naytaAika() {
 
