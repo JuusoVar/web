@@ -1,12 +1,10 @@
 console.log("Muuttujia ja tietotyyppejä-sivu avattu");
 
-// muuttujat
 let a = 3;
 let b = 5;
 let c = 7;
 let d = 15;
 
-// peruslaskut
 function summa(a, b) {
     alert(Number(a) + Number(b));
 }
@@ -23,7 +21,6 @@ function jako(a, b) {
     alert(Number(a) / Number(b));
 }
 
-// laskin (input-kentät)
 function laskin_summa() {
     let eka = document.getElementById("numero1").value;
     let toka = document.getElementById("numero2").value;
@@ -70,3 +67,52 @@ function naytaAika() {
     document.getElementById("viikonpaiva").innerHTML = viikonpaiva;
     document.getElementById("kuukausi").innerHTML = kuukausi;
 }
+
+let veijo = new Set(["luku", "poisto"]);
+let elvira = new Set(["luku", "kirjoitus", "muokkaus"]);
+let mehdi = new Set(["luku", "muokkaus", "poisto"]);
+let tuuli = new Set(["kirjoitus", "poisto"]);
+
+function tulostaKayttaja(nimi, setti) {
+
+    let ul = document.querySelector(`#${nimi} ul`);
+    ul.innerHTML = "";
+
+    for (let oikeus of setti) {
+
+        let li = document.createElement("li");
+        li.innerHTML = oikeus;
+        ul.appendChild(li);
+    }
+}
+
+tulostaKayttaja("veijo", veijo);
+tulostaKayttaja("elvira", elvira);
+tulostaKayttaja("mehdi", mehdi);
+tulostaKayttaja("tuuli", tuuli);
+
+let veijotuuli = new Set([...veijo, ...tuuli]);
+
+let mehdielvira = new Set([...mehdi].filter(x => elvira.has(x)));
+
+let elviratuuli = new Set(
+    [...elvira].filter(x => !tuuli.has(x))
+    .concat([...tuuli].filter(x => !elvira.has(x)))
+);
+
+function tulostaSetti(id, setti) {
+
+    let ul = document.getElementById(id);
+    ul.innerHTML = "";
+
+    for (let arvo of setti) {
+
+        let li = document.createElement("li");
+        li.innerHTML = arvo;
+        ul.appendChild(li);
+    }
+}
+
+tulostaSetti("veijotuuli", veijotuuli);
+tulostaSetti("mehdielvira", mehdielvira);
+tulostaSetti("elviratuuli", elviratuuli);
