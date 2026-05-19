@@ -25,13 +25,22 @@ function lisaa() {
 
     let inputElement = document.getElementById("tehtava");
 
+    let maaraElement = document.getElementById("maara");
+
     let tehtava = inputElement.value;
 
-    lista.push(tehtava);
+    let maara = maaraElement.value;
+
+    for (let i = 0; i < maara; i++) {
+
+        lista.push(tehtava);
+    }
 
     paivitaLista();
 
     inputElement.value = "";
+
+    maaraElement.value = "";
 }
 
 paivitaLista();
