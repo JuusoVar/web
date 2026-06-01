@@ -3,15 +3,15 @@
 <head>
     <link rel="icon" href="../favicon.png" type="image/png">
     <link rel="stylesheet" href="../maus.css">
-    <script src="Portfolio.js" defer></script>
+    <script src="Kasino.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfoliosivu</title>
+    <title>Kasino</title>
 </head>
 
-<body> 
+<body>
 
-  <div class="container">
+<div class="container">
 
     <header>
         Juuso Vartiainen Tiev 25P
@@ -30,12 +30,32 @@
             <a href="Muuttujia ja tietotyyppejä.html">Muuttujia ja tietotyyppejä</a>
             <a href="Tehtävälista.html">Tehtävälista</a>
             <a href="Henkilötiedot.html">Henkilötiedot</a>
-            <a href="Kasino.html">Kasino</a>
         </aside>
 
         <section>
-            <h1>Portfoliosivu</h1>
-            <h2>Täällä on web-ohjelmointi tehtäviä</h2>
+            <h1>Kasino</h1>
+
+            <h2>Noppa</h2>
+            <button onclick="heitäNoppaa()">Noppa</button>
+            <div id="noppa"></div>
+
+            <hr>
+
+            <h2>Lotto</h2>
+
+            <input type="number" class="omaNumero" min="1" max="40">
+            <input type="number" class="omaNumero" min="1" max="40">
+            <input type="number" class="omaNumero" min="1" max="40">
+            <input type="number" class="omaNumero" min="1" max="40">
+            <input type="number" class="omaNumero" min="1" max="40">
+            <input type="number" class="omaNumero" min="1" max="40">
+            <input type="number" class="omaNumero" min="1" max="40">
+
+            <br><br>
+
+            <button onclick="arvoLotto()">Lotto</button>
+
+            <div id="lotto"></div>
         </section>
 
     </main>
@@ -46,7 +66,7 @@
         <a href="https://tai.fi/">TAI</a>
     </footer>
 
-  </div>
+</div>
 
 </body>
 </html>
