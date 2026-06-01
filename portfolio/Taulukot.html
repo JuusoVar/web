@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <link rel="icon" href="../favicon.png" type="image/png">
+    <link rel="stylesheet" href="../maus.css">
+    <script src="Taulukot.js" defer></script>
+    <meta charset="UTF-8">
+    <title>Taulukot</title>
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+        Juuso Vartiainen Tiev 25P
+    </header>
+
+    <nav>
+        <a href="../index.html">Etusivu</a>
+        <a href="../työkokemukset.html">Työkokemukset</a>
+    </nav>
+
+    <main>
+
+        <aside>
+            <a href="keskustelusivu.html">Keskustelusivu</a>
+            <a href="flex.html">Flexsivu</a>
+            <a href="Muuttujia ja tietotyyppejä.html">Muuttujia ja tietotyyppejä</a>
+            <a href="Tehtävälista.html">Tehtävälista</a>
+            <a href="Henkilötiedot.html">Henkilötiedot</a>
+            <a href="Kasino.html">Kasino</a>
+            <a href="Merkkijonot.html">Merkkijonot</a>
+        </aside>
+
+        <section>
+            <h1>Taulukot</h1>
+
+            <h2>Poimi elementti</h2>
+            <input type="number" id="poimiNumero">
+            <button onclick="poimiElementti()">Näytä</button>
+            <div id="poimiTulos"></div>
+
+            <h2>Löydä indeksi</h2>
+            <input type="text" id="etsiSana">
+            <button onclick="loydäTaulukonIndeksi()">Näytä</button>
+            <div id="indeksiTulos"></div>
+
+            <h2>Leikkaa taulukko</h2>
+            <input type="number" id="alkuIndeksi">
+            <input type="number" id="loppuIndeksi">
+            <button onclick="leikkaaTaulukko()">Näytä</button>
+            <ul id="leikkausTulos"></ul>
+
+            <h2>Järjestä</h2>
+            <button onclick="tulostaSanat()">Tulosta tekstit</button>
+            <button onclick="jarjestaSanat()">Järjestä tekstit</button>
+            <button onclick="kaannaSanat()">Käännä tekstien järjestys</button>
+            <br><br>
+            <button onclick="tulostaNumerot()">Tulosta numerot</button>
+            <button onclick="jarjestaNumerot()">Järjestä numerot</button>
+            <button onclick="kaannaNumerot()">Käännä numeroiden järjestys</button>
+            <ul id="jarjestysTulos"></ul>
+
+            <h2>Suodata</h2>
+            <input type="number" id="suodatusNumero">
+            <button onclick="tulostaSuodatusNumerot()">Tulosta numerot</button>
+            <button onclick="valitsePienemmat()">Valitse pienemmät</button>
+            <button onclick="valitseSuuremmat()">Valitse suuremmat</button>
+            <ul id="suodatusTulos"></ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <a href="https://taito.edu.turku.fi/">Moodle</a>
+        <a href="https://turku.inschool.fi/">Wilma</a>
+        <a href="https://tai.fi/">TAI</a>
+    </footer>
+
+</div>
+
+</body>
+</html>
