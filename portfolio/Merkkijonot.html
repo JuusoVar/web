@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <link rel="icon" href="../favicon.png" type="image/png">
+    <link rel="stylesheet" href="../maus.css">
+    <script src="Merkkijonot.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merkkijonot</title>
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+        Juuso Vartiainen Tiev 25P
+    </header>
+
+    <nav>
+        <a href="../index.html">Etusivu</a>
+        <a href="../työkokemukset.html">Työkokemukset</a>
+    </nav>
+
+    <main>
+
+        <aside>
+            <a href="keskustelusivu.html">Keskustelusivu</a>
+            <a href="flex.html">Flexsivu</a>
+            <a href="Muuttujia ja tietotyyppejä.html">Muuttujia ja tietotyyppejä</a>
+            <a href="Tehtävälista.html">Tehtävälista</a>
+            <a href="Henkilötiedot.html">Henkilötiedot</a>
+            <a href="Kasino.html">Kasino</a>
+        </aside>
+
+        <section>
+            <h1>Merkkijonot</h1>
+
+            <h2>Poimi kirjain</h2>
+            <input type="text" id="teksti1" placeholder="Kirjoita teksti">
+            <input type="number" id="indeksi1" placeholder="Indeksi">
+            <button onclick="poimiKirjain()">Näytä</button>
+            <div id="tulos1"></div>
+
+            <h2>Löydä indeksi</h2>
+            <input type="text" id="teksti2" placeholder="Kirjoita teksti">
+            <input type="text" id="haku2" placeholder="Etsi">
+            <button onclick="loydäIndeksi()">Näytä</button>
+            <div id="tulos2"></div>
+
+            <h2>Leikkaa merkkijono</h2>
+            <input type="text" id="teksti3" placeholder="Kirjoita teksti">
+            <input type="number" id="alku3" placeholder="Alku">
+            <input type="number" id="loppu3" placeholder="Loppu">
+            <button onclick="leikkaaMerkkijono()">Näytä</button>
+            <div id="tulos3"></div>
+
+            <h2>Etsi ja korvaa</h2>
+            <input type="text" id="teksti4" placeholder="Kirjoita teksti">
+            <input type="text" id="etsi4" placeholder="Etsi">
+            <input type="text" id="korvaa4" placeholder="Korvaa">
+            <button onclick="etsiJaKorvaa()">Näytä</button>
+            <div id="tulos4"></div>
+
+            <h2>Poikki ja pinoon</h2>
+            <input type="text" id="teksti5" placeholder="Kirjoita teksti">
+            <input type="text" id="jakaja5" placeholder="Jakaja">
+            <button onclick="poikkiJaPinoon()">Näytä</button>
+            <ul id="tulos5"></ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <a href="https://taito.edu.turku.fi/">Moodle</a>
+        <a href="https://turku.inschool.fi/">Wilma</a>
+        <a href="https://tai.fi/">TAI</a>
+    </footer>
+
+</div>
+
+</body>
+</html>
